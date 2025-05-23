@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Content Container */
+.content {
+    padding: 25px;
+    margin-left: 280px; /* Match sidebar width */
+}
+
+/* Headings */
+h1 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000000;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 22px;
+    margin: 25px 0 15px 0;
+}
+
+/* Messages */
+.success-message {
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #d4edda;
+    border-radius: 4px;
+    border-left: 4px solid #28a745;
+}
+
+.error-message {
+    color: #dc3545;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8d7da;
+    border-radius: 4px;
+    border-left: 4px solid #dc3545;
+}
+
+/* Forms */
+form {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Input Fields */
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+/* Buttons */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button[name="deleteSchool"] {
+    background-color: #dc3545;
+}
+
+button[name="deleteSchool"]:hover {
+    background-color: #c82333;
+}
+
+/* School Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #000000;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Inline Forms in Table */
+td form {
+    display: inline;
+    background: none;
+    padding: 0;
+    box-shadow: none;
+    margin: 0;
+}
+
+td form input[type="text"] {
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    td form {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    td form input[type="text"] {
+        width: 100%;
+    }
+}

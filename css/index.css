@@ -1,0 +1,126 @@
+/* Reset and full-screen transparent layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Added bold */
+    overflow-x: hidden;
+    background: transparent !important;
+}
+
+/* Video background */
+.video-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    font-weight: 600; /* Added bold */
+}
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+/* Scrolled navbar */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    transition: background-color 0.3s ease;
+}
+
+/* Hero section */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    background: transparent !important;
+    padding: 8rem 0;
+    z-index: 1;
+    font-weight: 600; /* Added bold */
+}
+
+/* Logo styling */
+.logo-img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Content container */
+.content-container {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* College green color */
+.college-green {
+    color: #02680c;
+    font-weight: 900; /* Extra bold */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: rgba(85, 160, 73, 0.9);
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Added bold */
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #02680c;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer,
+.footer-transparent {
+    background-color: rgba(0,0,0,0.5) !important;
+    color: white !important;
+    text-shadow: 1px 1px 2px black;
+    z-index: 1;
+    position: relative;
+    font-weight: 600; /* Added bold */
+}
+.footer-transparent {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Alerts */
+.alert {
+    font-weight: 600; /* Added bold */
+}
+
+/* Responsive text */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 5rem 1rem;
+    }
+    .display-4 {
+        font-size: 2.2rem;
+    }
+    .lead {
+        font-size: 1.1rem;
+    }
+}

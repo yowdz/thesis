@@ -1,0 +1,8 @@
+[12-May-2025 08:53:21 Europe/Berlin] School deleted - ID: 48
+[12-May-2025 08:53:28 Europe/Berlin] School deleted - ID: 48
+[12-May-2025 08:53:49 Europe/Berlin] School updated - ID: 48, New Name: sad
+[12-May-2025 16:26:50 Europe/Berlin] PHP Warning:  Undefined array key "school_name" in C:\xampp\htdocs\thesiscode\includes\tabs\admin\schools.php on line 40
+[12-May-2025 16:26:50 Europe/Berlin] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\thesiscode\includes\tabs\admin\schools.php on line 40
+[12-May-2025 16:32:30 Europe/Berlin] Add School Error: School name must be at least 3 characters long.
+[12-May-2025 16:32:34 Europe/Berlin] Add School Error: School name must be at least 3 characters long.
+[12-May-2025 16:32:43 Europe/Berlin] Add School Error: School name must be at least 3 characters long.

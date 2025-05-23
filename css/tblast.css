@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    padding: 25px;
+    margin-left: 280px;
+}
+
+/* Header Styles - Already matching */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000000;
+}
+
+/* Filter Container - Update to match action-bar */
+.filter-container {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.filter-container select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    min-width: 150px;
+}
+
+.filter-container button {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    transition: all 0.2s;
+}
+
+/* Message Form */
+form {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    min-height: 150px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+/* Method Selection */
+label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Table Styles */
+.table-wrapper {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+#studentsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0;
+}
+
+#studentsTable th {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 500;
+}
+
+#studentsTable td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+}
+
+#studentsTable tr:last-child td {
+    border-bottom: none;
+}
+
+#studentsTable tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Search Input */
+#searchInput {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+/* Buttons */
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Status Styles */
+.highlighted {
+    background-color: #e8f5e9;
+}
+
+/* Messages */
+.success {
+    color: #28a745;
+    background-color: #d4edda;
+    border-left: 4px solid #28a745;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.error {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border-left: 4px solid #dc3545;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .filter-container {
+        flex-direction: column;
+    }
+
+    .filter-container select,
+    .filter-container button {
+        width: 100%;
+    }
+
+    #studentsTable {
+        display: block;
+        overflow-x: auto;
+    }
+}
+/* Checkbox Styles */
+input[type="checkbox"].form-check-input {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    accent-color: #3498db;
+}
+
+/* Table checkbox cell alignment */
+#studentsTable td:last-child,
+#studentTable td:last-child {
+    text-align: center;
+}
+
+#studentsTable th:last-child,
+#studentTable th:last-child {
+    text-align: center;
+}
